@@ -7,7 +7,47 @@
   <title>CSS Exercise 7</title>
 
   <style>
-  	
+	  .interior {
+		  width: 200px;
+		  height: 200px;
+		  border: 10px solid white;
+		  margin-left: 440px;
+	  }
+	  .interior::before{
+		content: " ";
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		left: 20px;
+		background: inherit;
+		opacity: 0.5;
+	}
+	  .interior::after{
+		content: " ";
+		position: absolute;
+		width: 200px;
+   		height: 200px;
+		left: 240px;
+		background: inherit;
+		opacity: .75	;
+	}
+	
+
+	  .div1 {
+		  background-color: red;
+	  }
+	  .div2 {
+		  background-color: orange;
+	  }
+	  .div3 {
+		  background-color: yellow;
+	  }
+	  .div4 {
+		  background-color: blue;
+	  }
+	  .div5 {
+		  background-color: violet;
+	  }
   </style>
 </head>
 <body>
